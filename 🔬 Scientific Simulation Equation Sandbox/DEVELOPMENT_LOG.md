@@ -36,3 +36,21 @@ Establish the project mindset, file boundaries, and directory layout for the Sci
 
 ### 💡 Core Discovery / Technical Insight
 AI is a design partner, not a typewriter. To truly own this code, I am focusing on logic design over code generation.
+
+===============================================================================================================================
+
+## [Date: 2026-11-03] 
+- how the Model pushes data back to the Graphics2D canvas to paint lines and shapes?
+- Here is the deep architectural breakdown of how numbers in your data model turn into fluid lines and shapes on a custom Graphics2D canvas.
+
+*Imagine you are making a moving cartoon using a stack of sticky notes (a flipbook).
+• The Model is the brain of the animator. It keeps track of the story math: "The ball is at step 5, so it needs to be exactly 2 inches from the bottom."
+• The View is the piece of paper and the pencil. It knows how to draw circles, lines, and colors.
+• The Canvas is a fresh sticky note.
+The animator doesn't grab the paper's hand to draw. Instead, every time a split second passes, the animator decides the ball's new position, tears off the old sticky note, looks at the new position numbers, and draws a fresh picture on a clean note. Because it happens fast, your eyes see a smooth animation*
+
+### 🎨 Visual Rendering Strategy
+
+- **Coordinate Mapping:** (How will I scale scientific math numbers, like a decimal pendulum velocity, into actual screen pixels so things don't render too tiny or fly off-screen?)
+- **Performance boundaries:** (How will I ensure my math model doesn't block the UI thread when calculating dense matrix simulations?)
+
