@@ -1,6 +1,10 @@
 This a journal book for the project from explaining things to myself clearly providing understanding
 
 GITHUB COMMANDS
+git add .
+git commit -m "Updating the development log file"
+git push -u origin main
+
 
 
 The Anti-Copy-Paste Strategy: How We Use AI Productively
@@ -54,3 +58,14 @@ The animator doesn't grab the paper's hand to draw. Instead, every time a split 
 - **Coordinate Mapping:** (How will I scale scientific math numbers, like a decimal pendulum velocity, into actual screen pixels so things don't render too tiny or fly off-screen?)
 - **Performance boundaries:** (How will I ensure my math model doesn't block the UI thread when calculating dense matrix simulations?)
 
+Render Mapping
+Imagine you have a tiny 1-inch drawing of a stick figure drawn on a flat, unstretched rubber band.
+• The space on your unstretched rubber band is your simulation space. It goes from 0.0 to 1.0.
+• Now, you grab both ends of the rubber band and stretch it across a wide 800-pixel wooden blocks frame (this is your computer window).
+The stick figure doesn't change its location relative to the rubber band—the point that was exactly in the middle (0.5) is still exactly in the middle, but now it aligns with the 400-pixel mark on the wood frame. To find any pixel point, you just multiply how far along the rubber band you are by how long the frame is.
+
+
+### 📐 Coordinate Systems Mapping Design
+
+- **Handling Inversion:** (How will I package my scaling math? Will I write helper methods inside my View panel class like `toPixelX(double x)` and `toPixelY(double y)` to cleanly handle the upside-down Y-axis transformation?)
+- **Aspect Ratio Control:** (If a user makes the window super wide, my perfect square simulation coordinate space might stretch into a distorted rectangle. How can I handle or protect my calculations from aspect ratio skewing?)
